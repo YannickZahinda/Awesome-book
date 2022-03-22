@@ -27,6 +27,7 @@ class BooksStoreUtilities {
             // console.log(storedBooks[i])
             cardElement += `<div class="card">
                 <h2 class="content">${storedBooks[i].title}, </h2>
+                <p class="content">${storedBooks[i].author}</p>
                 <button class='remove' value="${storedBooks[i].title}" type="button"> Remove</button>
             </div> <hr>`;
         }
