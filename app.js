@@ -23,11 +23,11 @@ class BooksStoreUtilities {
       let cardElement = '';
 
       for (let i = 0; i < storedBooks.length; i += 1) {
-        cardElement += `<div class="card">
+        cardElement += `<li class="card">
                 <h2 class="content">${storedBooks[i].title}, </h2>
                 <p class="content">${storedBooks[i].author}</p>
                 <button class='remove' value="${storedBooks[i].title}" type="button"> Remove</button>
-            </div> <hr>`;
+            </li><hr/>`;
       }
       cardContainer.innerHTML = cardElement;
     }
@@ -39,8 +39,6 @@ document.getElementById('addbtn').addEventListener('click', () => {
   oldBooks.push(new Book(titleEl.value, authorEl.value));
   localStorage.setItem('books', JSON.stringify(oldBooks));
   BooksStoreUtilities.displayBooks();
-  titleEl.value = '';
-  authorEl.value = '';
 });
 
 // remove a book
@@ -49,6 +47,7 @@ document.getElementById('books').addEventListener('click', (event) => {
   if (!isButton) return;
   BooksStoreUtilities.removeByTitle(event.target.value);
   BooksStoreUtilities.displayBooks();
+  console.log('I has been clicked with ', `${event.target.value}id`);
 });
 
 //  get all books
