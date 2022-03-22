@@ -1,65 +1,60 @@
-
-let books = []
-
-class Book{
-    constructor(title, author){
-        this.title = title;
-        this.author = author
-    }
-}
-
-// helper function to get information
-function getBooks(){
-    const storedNames = JSON.parse(localStorage.getItem("books"));
-    const cardContainer = document.getElementById('books');
-    cardContainer.innerHTML = '';
-    let cardElement = '';
-
-    for(let i = 0; i < storedNames.length; i +=1 ) {
-        console.log(storedNames[i])
-        cardElement += `<div class="card">
-            <h2 class="content">${storedNames[i].title}, </h2>
-            <button class='remove' value="${i}" type="button"> Remove</button>
-        </div> <hr>`;
-    }
-   cardContainer.innerHTML = cardElement;
-}
-
-
-document.getElementById('addbtn').addEventListener('click', () => {  
 const titleEl = document.getElementById('title');
 const authorEl = document.getElementById('author');
-books.push(Book(titleEl,value, authorEl.value))
-localStorage.setItem('books', JSON.stringify(books));
-getBooks()
+const cardContainer = document.getElementById('books');
 
+class Book{constructor(title, author){ this.title = title; this.author = author }}
+
+ 
+// utility methods
+
+class BooksStoreUtilities {
+
+    static getBooks =() =>{
+      return JSON.parse(localStorage.getItem('books') || '[]');
+    } 
+
+    static removeByTitle =(title) => {
+    const books = this.getBooks();
+    const filteredBooks = books.filter(item => item.title !== title);
+    localStorage.setItem("books", JSON.stringify(filteredBooks));
+    }  
+
+    static displayBooks = () => {
+        const storedBooks =  BooksStoreUtilities.getBooks();
+        cardContainer.innerHTML = '';
+        let cardElement = '';
+    
+        for(let i = 0; i < storedBooks.length; i +=1 ) {
+            // console.log(storedBooks[i])
+            cardElement += `<div class="card">
+                <h2 class="content">${storedBooks[i].title}, </h2>
+                <button class='remove' value="${storedBooks[i].title}" type="button"> Remove</button>
+            </div> <hr>`;
+        }
+    cardContainer.innerHTML = cardElement;
+    }
+}
+
+// add book
+document.getElementById('addbtn').addEventListener('click', () => { 
+    const oldBooks = BooksStoreUtilities.getBooks();
+    oldBooks.push(new Book(titleEl.value, authorEl.value));
+    localStorage.setItem('books', JSON.stringify(oldBooks)); 
+    BooksStoreUtilities. displayBooks();   
 });
 
-console.log(books)
-
-window.addEventListener('load',  () => {
-
-    getBooks()
-
-})
-
+// remove a book
 document.getElementById('books').addEventListener('click', (event) => {
-
     const isButton = event.target.nodeName === 'BUTTON';
-  
-    if (!isButton) {
-      return;
-    }
-    remove(event.target.value , event)
+    if (!isButton) return;
+     BooksStoreUtilities.removeByTitle(event.target.value);
+     BooksStoreUtilities.displayBooks(); 
+    console.log('I has been clicked with ', event.target.value + 'id')
   });
 
-  function remove(index , e){
-     books.splice(index,1);
-     console.log(books)
-      localStorage.setItem('books', JSON.stringify(books));
-      window.location.reload();
-   }
-
-
+//  get all books
+window.addEventListener('load', () => {
+   BooksStoreUtilities.displayBooks(); 
+})
 
 
