@@ -4,7 +4,6 @@ const cardContainer = document.getElementById('books');
 
 class Book{constructor(title, author){ this.title = title; this.author = author }}
 
- 
 // utility methods
 
 class BooksStoreUtilities {
