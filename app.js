@@ -1,4 +1,5 @@
 /* eslint-disable max-classes-per-file */
+/* eslint-disable no-unused-vars */
 
 const titleEl = document.getElementById('title');
 const authorEl = document.getElementById('author');

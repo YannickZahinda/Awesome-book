@@ -15,6 +15,10 @@ header {
   margin: 12px 0 20px 0;
 }
 
+.time{
+    text-align: right;
+}
+
 .awesome-books {
   flex: 1;
 }
