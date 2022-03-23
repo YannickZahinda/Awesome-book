@@ -24,6 +24,7 @@ body {
   text-align: center;
   width: 50%;
   margin: 0 auto;
+  display: none;
 }
 
 .form-heading {
@@ -50,10 +51,22 @@ input {
 .remove {
   padding: 3px;
   margin: 5px;
+  box-shadow: 2px 1px 8px #000;
+  border: 2px solid #000;
 }
 
 .card {
   background-color: #fff;
+  display: flex;
+}
+
+.btn {
+  flex: 1;
+  text-align: end;
+}
+
+.p-content {
+  vertical-align: middle;
 }
 
 #message {
@@ -62,4 +75,16 @@ input {
   color: red;
   font-size: small;
   margin: 10px 0 10px;
+}
+
+.container {
+  display: block;
+}
+
+.contact-info-container {
+  display: none;
+}
+
+.add-book {
+  display: none;
 }

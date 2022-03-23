@@ -1,9 +1,12 @@
 /* eslint-disable max-classes-per-file */
+/* eslint-disable no-unused-vars */
 
 const titleEl = document.getElementById('title');
 const authorEl = document.getElementById('author');
 const cardContainer = document.getElementById('books');
 const message = document.getElementById('message');
+const addBookFormEl = document.querySelector('#form');
+const mainContainerEl = document.querySelector('.container');
 class Book {constructor(title, author) { this.title = title; this.author = author; }}
 
 // utility methods
@@ -28,6 +31,8 @@ class BooksStoreUtilities {
         localStorage.setItem('books', JSON.stringify(books));
         message.textContent = '';
         message.style.display = 'none';
+        addBookFormEl.style.display = 'none';
+        mainContainerEl.style.display = 'block';
       }
     }
 }
@@ -41,9 +46,9 @@ class MainUI {
 
       for (let i = 0; i < storedBooks.length; i += 1) {
         cardElement += `<li class="card">
-                  <h2 class="content">${storedBooks[i].title}, </h2>
-                  <p class="content">${storedBooks[i].author}</p>
-                  <button class='remove' value="${storedBooks[i].title}" type="button"> Remove</button>
+                  <h3 class="content">${storedBooks[i].title}, &nbsp; by &nbsp;&nbsp;</h3>
+                  <h3 class="content p-content"><em>${storedBooks[i].author}</em></h3>
+                  <div class="btn"><button class='remove' value="${storedBooks[i].title}" type="button"> Remove</button></div>
               </li> <hr>`;
       }
       cardContainer.innerHTML = cardElement;

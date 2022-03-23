@@ -1,7 +1,7 @@
 {
   "name": "awesome-book",
   "version": "1.0.0",
-  "description": "",
+  "description": "In this project we performed a website that allows the user to record the title of a given book, to add it on the screen then to remove it if needed, so even if the page is reload, the data stay preserved in the browser",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
