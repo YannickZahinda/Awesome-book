@@ -60,12 +60,12 @@ input {
   display: flex;
 }
 
-.btn{
+.btn {
   flex: 1;
   text-align: end;
 }
 
-.p-content{
+.p-content {
   vertical-align: middle;
 }
 
