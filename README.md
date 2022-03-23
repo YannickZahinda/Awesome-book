@@ -3,7 +3,7 @@ In this project we performed a website that allows the user to record the title 
 
 # Build with
 
-HTML and Javascript
+HTML CSS Javascript
 
 # Live Demo
 
