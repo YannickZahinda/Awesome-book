@@ -11,6 +11,7 @@ class Book {constructor(title, author) { this.title = title; this.author = autho
 // utility methods
 class BooksStoreUtilities {
     static getBooks =() => JSON.parse(localStorage.getItem('books') || '[]')
+
     static removeByTitle =(title) => {
       const books = this.getBooks();
       const filteredBooks = books.filter((item) => item.title !== title);
