@@ -7,7 +7,7 @@ HTML and Javascript
 
 # Live Demo
 
-[link to Awesome book]()
+[link to Awesome book]( https://yannickzahinda.github.io/Awesome-book/)
 
 
 # Getting started
@@ -22,6 +22,8 @@ To get a local copy up and running follow these simple example steps.
 ```
 
 ## Deployment 
+
+[https://yannickzahinda.github.io/Awesome-book/](https://yannickzahinda.github.io/Awesome-book/)
 
 # Screenshot of the project
 
