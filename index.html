@@ -5,29 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./nav-style.css" />
     <title>Document</title>
   </head>
   <body>
     <main class="wrapper">
       <header>
-        <nav></nav>
+        <h2 class="awesome-books">Awesome Books</h2>
+        <nav>
+          <ul class="nav-links">
+            <li class="link">List</li>
+            <li class="link">Add new</li>
+            <li class="link">Contact</li>
+          </ul>
+        </nav>
       </header>
       <section class="hero">
-        <h1>Awesome books </h1>
+        <div class="all-awesome-books"><h1>All Awesome books</h1></div>
         <small id="message"></small>
         <div class="container">
           <ul id="books" class="books"></ul>
-          <form id="form" action="#">
-             <h2 class="form-heading">Add new book </h2> 
-            <input type="text" name="title" id="title" placeholder="Title" />
-            <br /><br />
-            <input type="text" name="author" id="author" placeholder="Author" />
-            <br /><br />
-            <div class="button-container"><button id="addbtn" type="button">Add</button>
-            </div>
-          </form>
         </div>
       </section>
+      <section class="main-section"></section>
+      <section class="contact">
+        <h3>Contact Information</h3>
+        <p>
+          Do have any question on want to say : "Hello" ? <br />
+          You can reach out to us : <br />
+          .Our e-mail : example@gmail.com <br />.Our phone-number : 07848888888
+          <br />
+          Our address : Streename, 000,City Country
+        </p>
+      </section>
+      <section class="add-book">
+        <form id="form" action="#">
+          <h2 class="form-heading">Add new book</h2>
+          <input type="text" name="title" id="title" placeholder="Title" />
+          <br /><br />
+          <input type="text" name="author" id="author" placeholder="Author" />
+          <br /><br />
+          <div class="button-container">
+            <button id="addbtn" type="button">Add</button>
+          </div>
+        </form>
+      </section>
+      <footer></footer>
     </main>
     <script src="./app.js"></script>
   </body>
