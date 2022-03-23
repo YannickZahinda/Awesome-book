@@ -4,6 +4,8 @@ const titleEl = document.getElementById('title');
 const authorEl = document.getElementById('author');
 const cardContainer = document.getElementById('books');
 const message = document.getElementById('message');
+const addBookForm = document.querySelector('#form');
+const mainContainer = document.querySelector('.container');
 class Book {constructor(title, author) { this.title = title; this.author = author; }}
 
 // utility methods
@@ -28,6 +30,8 @@ class BooksStoreUtilities {
         localStorage.setItem('books', JSON.stringify(books));
         message.textContent = '';
         message.style.display = 'none';
+        addBookForm.style.display = 'none';
+        mainContainer.style.display = 'block';
       }
     }
 }

@@ -1,56 +1,55 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-header{
-    display: flex;
-    border: 2px solid #000;
-    padding: 8px 20px 8px 20px;
-    margin: 12px 0 20px 0;
+header {
+  display: flex;
+  border: 2px solid #000;
+  padding: 8px 20px 8px 20px;
+  margin: 12px 0 20px 0;
 }
 
-.awesome-books{
-    flex: 1;
+.awesome-books {
+  flex: 1;
 }
 
-.nav-links{
-    display: flex;
-    list-style-type: none;
+.nav-links {
+  display: flex;
+  list-style-type: none;
 }
 
-
-.link{
-    border-right: 1px solid #000;
-    padding: 5px 5px;
-    font-weight: bold;
+.link {
+  border-right: 1px solid #000;
+  padding: 5px 5px;
+  font-weight: bold;
 }
 
-.link:hover{
-    color: rgb(4, 4, 243);
-    cursor: pointer;
+.link:hover {
+  color: rgb(4, 4, 243);
+  cursor: pointer;
 }
 
-.link:focus{
-    color: rgb(4, 4, 243);
+.link:focus {
+  color: rgb(4, 4, 243);
 }
 
-.active{
-    display: block;
+.active {
+  display: block;
 }
 
-.link:nth-child(3){
-    border: none;
+.link:nth-child(3) {
+  border: none;
 }
 
-.all-awesome-books{
-    text-align: center;
-    margin-bottom: 20px;
+.all-awesome-books {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .add-book,
-.contact{
-    text-align: center;
-    display: block;
+.contact {
+  text-align: center;
+  display: block;
 }

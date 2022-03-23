@@ -14,33 +14,27 @@
         <h2 class="awesome-books">Awesome Books</h2>
         <nav>
           <ul class="nav-links">
-            <li class="link">List</li>
-            <li class="link">Add new</li>
-            <li class="link">Contact</li>
+            <li id ='booklist' class="link">List</li>
+            <li id ='add-book' class="link">Add new</li>
+            <li id="contactlink" class="link">Contact</li>
           </ul>
         </nav>
       </header>
       <section class="hero">
-        <div class="all-awesome-books"><h1>All Awesome books</h1></div>
+        <div class="all-awesome-books">
+        <h1>All Awesome books</h1>
+      </div>
         <small id="message"></small>
-        <div class="container">
+        <div id='container' class="container">
           <ul id="books" class="books"></ul>
         </div>
       </section>
-      <section class="main-section"></section>
-      <section class="contact">
-        <h3>Contact Information</h3>
-        <p>
-          Do have any question on want to say : "Hello" ? <br />
-          You can reach out to us : <br />
-          .Our e-mail : example@gmail.com <br />.Our phone-number : 07848888888
-          <br />
-          Our address : Streename, 000,City Country
-        </p>
-      </section>
+      
+     
       <section class="add-book">
+        <h2 class="form-heading">Add new book</h2>
         <form id="form" action="#">
-          <h2 class="form-heading">Add new book</h2>
+         
           <input type="text" name="title" id="title" placeholder="Title" />
           <br /><br />
           <input type="text" name="author" id="author" placeholder="Author" />
@@ -50,8 +44,23 @@
           </div>
         </form>
       </section>
+
+      <section class="contact">
+        <div class="contact-info-container">
+          <h3>Contact Information</h3>
+          <p>
+            Do have any question on want to say : "Hello" ? <br />
+            You can reach out to us : <br />
+            .Our e-mail : example@gmail.com <br />.Our phone-number : 07848888888
+            <br />
+            Our address : Streename, 000,City Country
+          </p>
+        </div>
+       
+      </section>
       <footer></footer>
     </main>
     <script src="./app.js"></script>
+    <script src="nav.js"></script>
   </body>
 </html>
