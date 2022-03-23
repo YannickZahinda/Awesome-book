@@ -23,6 +23,10 @@ To get a local copy up and running follow these simple example steps.
 
 ## Deployment 
 
+# Screenshot of the project
+
+<img width="1268" alt="Screen Shot 2022-03-23 at 20 05 47" src="https://user-images.githubusercontent.com/91213045/159766717-0a157ee1-f5fd-4cc6-99e4-8ea13889aea7.png">
+
 👤 **Author1**
 
 - GitHub: [@YannickZahinda](https://github.com/YannickZahinda)
