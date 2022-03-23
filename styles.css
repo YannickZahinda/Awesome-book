@@ -1,3 +1,57 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 9px;
+}
+
+.wrapper {
+  width: 97%;
+}
+
+.books {
+  border: 3px solid #000;
+  list-style-type: none;
+  padding: 7px;
+}
+
+#form {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-heading {
+  margin: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #000;
+}
+
+.button-container {
+  text-align: end;
+}
+
+#addbtn {
+  width: 25%;
+  border: 2px solid #000;
+  padding: 5px;
+  box-shadow: 2px 1px 8px #000;
+}
+
+.remove {
+  padding: 3px;
+  margin: 5px;
+}
+
+.card {
+  background-color: #fff;
 }

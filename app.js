@@ -30,10 +30,11 @@ class MainUI {
       let cardElement = '';
 
       for (let i = 0; i < storedBooks.length; i += 1) {
-        cardElement += `<div class="card">
-                  <h2 class="content">${storedBooks[i].title}, </h2>
-                  <button class='remove' value="${storedBooks[i].title}" type="button"> Remove</button>
-              </div> <hr>`;
+        cardElement += `<li class="card">
+                <h2 class="content">${storedBooks[i].title}, </h2>
+                <p class="content">${storedBooks[i].author}</p>
+                <button class='remove' value="${storedBooks[i].title}" type="button"> Remove</button>
+            </li><hr/>`;
       }
       cardContainer.innerHTML = cardElement;
     }
@@ -42,7 +43,8 @@ class MainUI {
 // add book
 document.getElementById('addbtn').addEventListener('click', () => {
   const oldBooks = BooksStoreUtilities.getBooks();
-  BooksStoreUtilities.addBook(oldBooks);
+  oldBooks.push(new Book(titleEl.value, authorEl.value));
+  localStorage.setItem('books', JSON.stringify(oldBooks));
   MainUI.displayBooks();
 });
 
