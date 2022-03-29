@@ -72,7 +72,5 @@ document.getElementById('books').addEventListener('click', (event) => {
   MainUI.displayBooks();
 });
 
-//  get all books
-window.addEventListener('load', () => {
-  MainUI.displayBooks();
-});
+
+export { MainUI };
