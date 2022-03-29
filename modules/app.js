@@ -1,5 +1,5 @@
 /* eslint-disable max-classes-per-file */
-/* eslint-disable import/prefer-default-export */
+
 /* eslint-disable no-unused-vars */
 
 const titleEl = document.getElementById('title');
@@ -35,7 +35,7 @@ class BooksStoreUtilities {
     } else {
       books.push(new Book(titleEl.value, authorEl.value));
       localStorage.setItem('books', JSON.stringify(books));
-      message.textContent = "";
+      message.textContent = '';
       message.style.display = 'none';
       addBookFormEl.style.display = 'none';
       mainContainerEl.style.display = 'block';
@@ -47,8 +47,8 @@ class BooksStoreUtilities {
 class MainUI {
   static displayBooks = () => {
     const storedBooks = BooksStoreUtilities.getBooks();
-    cardContainer.innerHTML = "";
-    let cardElement = "";
+    cardContainer.innerHTML = '';
+    let cardElement = '';
 
     for (let i = 0; i < storedBooks.length; i += 1) {
       cardElement += `<li class="card">
@@ -66,8 +66,8 @@ document.getElementById('addbtn').addEventListener('click', () => {
   const oldBooks = BooksStoreUtilities.getBooks();
   BooksStoreUtilities.addBook(oldBooks);
   MainUI.displayBooks();
-  titleEl.value = "";
-  authorEl.value = "";
+  titleEl.value = '';
+  authorEl.value = '';
 });
 
 // remove a book
@@ -78,4 +78,4 @@ document.getElementById('books').addEventListener('click', (event) => {
   MainUI.displayBooks();
 });
 
-export { MainUI };
+export default MainUI ;

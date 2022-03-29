@@ -23,4 +23,4 @@ document.getElementById('contactlink').addEventListener('click', () => {
   contactInfo.style.display = 'block';
 });
 
-export {time};
+export default time;

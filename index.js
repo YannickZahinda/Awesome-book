@@ -1,5 +1,5 @@
-import { myLocalDate } from './modules/time.js';
-import { MainUI } from './modules/app.js';
+import myLocalDate from './modules/time.js';
+import MainUI from './modules/app.js';
 
 setInterval(myLocalDate, 1000);
 
