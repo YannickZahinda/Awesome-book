@@ -78,4 +78,4 @@ document.getElementById('books').addEventListener('click', (event) => {
   MainUI.displayBooks();
 });
 
-export default MainUI ;
+export default MainUI;
