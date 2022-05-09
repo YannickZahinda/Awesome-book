@@ -20,6 +20,13 @@ To get a local copy up and running follow these simple example steps.
  
 
 ```
+# Run in you Browser
+```
+$ npm install : to install all dependecies
+$ npm start
+```
+
+
 
 ## Deployment 
 
