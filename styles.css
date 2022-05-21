@@ -60,8 +60,10 @@ input {
 }
 
 .card {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.798);
   display: flex;
+  padding: 6px;
+  border-radius: 4px;
 }
 
 .btn {
@@ -69,8 +71,12 @@ input {
   text-align: end;
 }
 
+.content {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .p-content {
-  vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #message {
@@ -87,6 +93,7 @@ input {
 
 .contact-info-container {
   display: none;
+  background-color: rgba(255, 255, 255, 0.798);
 }
 
 .add-book {
