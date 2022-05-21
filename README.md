@@ -7,7 +7,7 @@ HTML CSS Javascript
 
 # Screenshot of the project
 
-![screencapture-localhost-5050-2022-05-21-12_59_26](https://user-images.githubusercontent.com/91213045/169648823-e9ed3060-ea4c-41e6-9905-162b265eeb9d.png)
+![screencapture-yannickzahinda-github-io-Awesome-book-2022-05-21-13_31_36](https://user-images.githubusercontent.com/91213045/169649846-9986aa1b-3480-407f-a341-6b67cf553914.png)
 
 # Live Demo
 
