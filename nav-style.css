@@ -103,7 +103,7 @@ footer {
 }
 
 .footer {
-  border: 3px solid #000;
+  box-shadow: 4px 5px 8px;
   padding: 20px;
   width: 97%;
   margin: 0 auto;
