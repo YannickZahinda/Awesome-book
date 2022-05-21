@@ -12,10 +12,14 @@ body {
 
 .wrapper {
   width: 97%;
+  background-color: rgb(74, 172, 172);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .books {
-  border: 3px solid #000;
+  box-shadow: 3px 4px 9px;
+  border-radius: 6px;
   list-style-type: none;
   padding: 7px;
 }
