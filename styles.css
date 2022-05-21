@@ -99,3 +99,8 @@ input {
 .add-book {
   display: none;
 }
+
+.p-content{
+  font-weight: 800;
+  font-variant: small-caps;
+}

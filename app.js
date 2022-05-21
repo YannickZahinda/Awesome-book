@@ -47,7 +47,7 @@ class MainUI {
       for (let i = 0; i < storedBooks.length; i += 1) {
         cardElement += `<li class="card">
                   <h3 class="content">${storedBooks[i].title}, &nbsp; by &nbsp;&nbsp;</h3>
-                  <h3 class="content p-content"><em>${storedBooks[i].author}</em></h3>
+                  <h3 class="content p-content">${storedBooks[i].author}</h3>
                   <div class="btn"><button class='remove' value="${storedBooks[i].title}" type="button"> Remove</button></div>
               </li> <hr>`;
       }
